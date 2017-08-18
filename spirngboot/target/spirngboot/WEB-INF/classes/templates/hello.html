@@ -1,0 +1,36 @@
+<!-- 这个标签标示可以使用HTML5 -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Thymeleaf模板的使用</title>
+</head>
+<body>
+
+
+<table border="1" cellspacing="1">
+
+	<thead>
+		<tr>
+			<td>员工工号</td>
+			<td>姓名</td>
+			<td>职位</td>
+			<td>薪资</td>
+		</tr>
+	</thead>
+	 
+	<tbody>
+		<tr th:each="us:${es}">
+			<td th:text="${us.empno}">lee0</td>
+			 <td th:text="${us.ename}">lee0</td>
+			<td th:text="${us.job}">19</td>
+			<td th:text="${us.sal}">女</td> 
+			
+		</tr>
+	</tbody>
+
+</table>
+
+
+</body>
+</html>

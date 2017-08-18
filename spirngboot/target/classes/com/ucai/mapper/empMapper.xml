@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.ucai.mapper.EmpMapper" >
+
+<!-- 做类与数据库的映射 -->
+<resultMap type="com.ucai.pojo.Emp" id="empMapper" >
+
+	<result column="empno"  property="empno" jdbcType="INTEGER" javaType="int"/>
+	<result column="job"  property="job" jdbcType="VARCHAR" javaType="string"/>
+	<result column="sal"  property="sal" jdbcType="DOUBLE" javaType="double"/>
+	<result column="ename"  property="ename" jdbcType="VARCHAR" javaType="string"/>
+</resultMap>
+
+</mapper>
